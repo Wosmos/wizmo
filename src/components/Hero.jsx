@@ -2,23 +2,25 @@ import React from 'react';
 
 import { logo } from '../assets';
 import Logo from './logo';
+import Socials from './socials';
 const Hero = () => {
   return (
     <header className='w-full flex justify-center items-center flex-col'>
-      <nav className='flex justify-between items-center w-full mb-10 pt-3'>
-        {/* <img src={logo} alt='sumz_logo' className='w-28 object-contain' /> */}
+      <nav className='flex justify-between items-center w-full mb-10 pt-3  '>
         <Logo width='100' height='100' alt='sumz_logo' />
 
-        <button
+        {/* <button
           type='button'
           onClick={() => window.open('https://github.com/Wosmos', '_blank')}
-          className='black_btn'
+          className=' px-7 py-3 text-white bg-slate-50/20  rounded-full '
         >
           GitHub
-        </button>
+        </button> */}
+        <Socials/>
+        
       </nav>
 
-      <div className='mt-0 md:mt-28'>
+      <div className='mt-0 md:mt-10'>
         <h1 className='head_text  '>
           Summarize Articles with <br className='max-md:hidden' />
           <span className='purple_gradient'>OpenAI GPT-4</span>

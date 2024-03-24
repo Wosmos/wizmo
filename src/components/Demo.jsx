@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { FroalaEditor } from 'react-froala-wysiwyg';
 import { copy, linkIcon, loader, tick } from '../assets';
 import { useLazyGetSummaryQuery } from '../services/article';
 
@@ -70,7 +69,7 @@ const Demo = () => {
           <img
             src={linkIcon}
             alt='link-icon'
-            className='absolute left-0 my-2 ml-3 w-5 object-contain filter invert'
+            className='absolute left-0 my-2 ml-3 w-5 object-contain filter invert' 
           />
 
           <input
@@ -87,6 +86,9 @@ const Demo = () => {
             className='submit_btn peer-focus:border-gray-700 peer-focus:text-gray-700  rounded-2xl '
           >
             <p>↵</p>
+            {/* <p >
+              ✔️
+            </p> */}
           </button>
         </form>
 
