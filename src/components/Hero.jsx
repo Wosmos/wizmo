@@ -7,7 +7,7 @@ const Hero = () => {
     <header className='w-full flex justify-center items-center flex-col'>
       <nav className='flex justify-between items-center w-full mb-10 pt-3'>
         {/* <img src={logo} alt='sumz_logo' className='w-28 object-contain' /> */}
-        <Logo width='200' height='100' alt='sumz_logo' />
+        <Logo width='100' height='100' alt='sumz_logo' />
 
         <button
           type='button'
@@ -18,7 +18,7 @@ const Hero = () => {
         </button>
       </nav>
 
-      <div className=' mt-28'>
+      <div className='mt-0 md:mt-28'>
         <h1 className='head_text  '>
           Summarize Articles with <br className='max-md:hidden' />
           <span className='purple_gradient'>OpenAI GPT-4</span>
