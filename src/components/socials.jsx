@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 
 const SocialLinks = [
-  { name: 'Github', link: 'https://www.facebook.com' },
-  { name: 'Twitter', link: 'https://www.twitter.com' },
-  { name: 'Instagram', link: 'https://www.instagram.com' },
-  { name: 'LinkedIn', link: 'https://www.linkedin.com' },
+  { name: 'Github', link: 'https://github.com/Wosmos' },
+  { name: 'Instagram', link: 'https://www.instagram.com/wosmo_tech/' },
+  {
+    name: 'LinkedIn',
+    link: 'https://www.linkedin.com/in/wasif-malik-79205a1bb/',
+  },
+  { name: 'Hashnode', link: 'https://hashnode.com/@Wosmo' },
 ];
 
 const Socials = () => {

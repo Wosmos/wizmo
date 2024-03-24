@@ -8,26 +8,20 @@ const Hero = () => {
     <header className='w-full flex justify-center items-center flex-col'>
       <nav className='flex justify-between items-center w-full mb-10 pt-3  '>
         <Logo width='100' height='100' alt='sumz_logo' />
-
-        {/* <button
-          type='button'
-          onClick={() => window.open('https://github.com/Wosmos', '_blank')}
-          className=' px-7 py-3 text-white bg-slate-50/20  rounded-full '
-        >
-          GitHub
-        </button> */}
-        <Socials/>
-        
+        <Socials />
       </nav>
 
       <div className='mt-0 md:mt-10'>
-        <h1 className='head_text  '>
-          Summarize Articles with <br className='max-md:hidden' />
-          <span className='purple_gradient'>OpenAI GPT-4</span>
+        <h1 className='head_text'>
+          Unlock the <span className='purple_gradient'>Power </span> of{' '}
+          <br className='max-md:hidden' />
+          <span className='purple_gradient'>AI-Driven </span>Summarization
         </h1>
         <h2 className='desc'>
-          Simplify your reading with Summize, an open-source article summarizer
-          that transforms lengthy articles into clear and concise summaries
+          Revolutionize your reading experience with Summize, the cutting-edge,
+          open-source solution that harnesses the incredible capabilities of
+          OpenAI GPT-4 to distill complex articles into concise, insightful
+          summaries, allowing you to effortlessly grasp the essence of any text.
         </h2>
       </div>
     </header>
