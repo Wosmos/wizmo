@@ -11,11 +11,11 @@ const Hero = () => {
         <Socials />
       </nav>
 
-      <div className='mt-0 md:mt-10'>
+      <div className='mt-0  md:mt-10'>
         <h1 className='head_text'>
-          Unlock the <span className='purple_gradient'>Power </span> of{' '}
+          Unlock the <span className='blue_gradient'>Power </span> of{' '}
           <br className='max-md:hidden' />
-          <span className='purple_gradient'>AI-Driven </span>Summarization
+          <span className='blue_gradient'>AI-Driven </span>Summarization
         </h1>
         <h2 className='desc'>
           Revolutionize your reading experience with Summize, the cutting-edge,

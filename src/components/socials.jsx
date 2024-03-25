@@ -26,7 +26,7 @@ const Socials = () => {
         Socials
       </button>
       {isOpen && (
-        <div className='absolute z-10 mt-2 bg-white/20 text-white/90 rounded-md shadow-lg hover:text-white'>
+        <div className='absolute z-10 mt-2 bg-white/20 backdrop-blur-md text-white/90 rounded-md shadow-lg hover:text-white'>
           {SocialLinks.map((link, index) => (
             <a
               key={index}
