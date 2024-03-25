@@ -69,7 +69,7 @@ const Demo = () => {
           <img
             src={linkIcon}
             alt='link-icon'
-            className='absolute left-0 my-2 ml-3 w-5 object-contain filter invert' 
+            className='absolute left-0 my-2 ml-3 w-5 object-contain filter invert'
           />
 
           <input
@@ -93,30 +93,30 @@ const Demo = () => {
         </form>
 
         {/* Browse History */}
-        <div className='flex flex-col gap-1 max-h-60 overflow-y-auto '>
+        <section className='flex flex-col gap-1 max-h-60 overflow-y-auto '>
           {allArticles.reverse().map((item, index) => (
             <div
               key={`link-${index}`}
               onClick={() => setArticle(item)}
-              className='link_card '
+              className='link_card transition-all ease-in   hover:bg-white/20'
             >
-              <div className='copy_btn' onClick={() => handleCopy(item.url)}>
+              <div className='copy_btn ' onClick={() => handleCopy(item.url)}>
                 <img
                   src={copied === item.url ? tick : copy}
                   alt={copied === item.url ? 'tick_icon' : 'copy_icon'}
                   className='w-[40%] h-[40%] object-contain filter invert'
                 />
               </div>
-              <p className='flex-1 font-satoshi text-blue-100 font-medium text-sm truncate'>
+              <p className='flex-1 font-satoshi text-blue-100 font-medium text-sm truncate '>
                 {item.url}
               </p>
             </div>
           ))}
-        </div>
+        </section>
       </div>
       {/* <FroalaEditor /> */}
       {/* Display Result */}
-      <div className=' my-10 max-w-full flex justify-center items-center'>
+      <section className=' my-10 max-w-full flex justify-center items-center'>
         {isFetching ? (
           <img src={loader} alt='loader' className='w-20 h-20 object-contain' />
         ) : error ? (
@@ -134,14 +134,14 @@ const Demo = () => {
                 Article <span className='blue_gradient'>Summary</span>
               </h2>
               <div className='summary_box'>
-                <p className='font-inter font-medium text-sm text-gray-300'>
+                <p className='font-inter font-medium text-sm text-gray-300 '>
                   {article.summary}
                 </p>
               </div>
             </div>
           )
         )}
-      </div>
+      </section>
     </section>
   );
 };

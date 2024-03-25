@@ -6,6 +6,24 @@
   Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
 */
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: rgb(0, 7, 21); /* Set the track color to none */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(45deg,
+    #2563eb,
+    #2dd4bf
+  ); /* Glassy thumb color with transparency */
+  border-radius: 6px; /* Round the corners */
+  border: 3px solid rgba(0, 120, 255, 0); /* Transparent border */
+}
 .main {
   width: 100vw;
   min-height: 100vh;
@@ -93,11 +111,11 @@
 }
 
 .url_input {
-  @apply  block w-full rounded-xl border border-gray-200 bg-white/10 text-white py-4 pl-10 pr-12 text-sm shadow-lg font-satoshi font-medium focus:border-white focus:outline-none focus:ring-0  backdrop-blur-xl;
+  @apply block w-full rounded-xl border border-gray-200 bg-white/10 text-white py-4 pl-10 pr-12 text-sm shadow-lg font-satoshi font-medium focus:border-white focus:outline-none focus:ring-0  backdrop-blur-xl;
 }
 
 .submit_btn {
-  @apply hover:border-gray-700 hover:text-gray-300 absolute inset-y-0 right-0 my-3 mr-3 flex w-10 py-[10px] items-center justify-center rounded-md border border-gray-200 font-sans text-sm font-medium text-gray-400 bg-gradient-to-r from-blue-600 to-cyan-600 ;
+  @apply hover:border-gray-700 hover:text-gray-300 absolute inset-y-0 right-0 my-3 mr-3 flex w-10 py-[10px] items-center justify-center rounded-md border border-gray-200 font-sans text-sm font-medium text-gray-400 bg-gradient-to-r from-blue-600 to-cyan-600;
 }
 
 .link_card {
@@ -109,7 +127,7 @@
 }
 
 .blue_gradient {
-  @apply font-black bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent ;
+  @apply font-black bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
 }
 
 .summary_box {

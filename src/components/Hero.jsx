@@ -11,7 +11,7 @@ const Hero = () => {
         <Socials />
       </nav>
 
-      <div className='mt-0  md:mt-10'>
+      <section className='mt-0  md:mt-10'>
         <h1 className='head_text'>
           Unlock the <span className='blue_gradient'>Power </span> of{' '}
           <br className='max-md:hidden' />
@@ -23,7 +23,7 @@ const Hero = () => {
           OpenAI GPT-4 to distill complex articles into concise, insightful
           summaries, allowing you to effortlessly grasp the essence of any text.
         </h2>
-      </div>
+      </section>
     </header>
   );
 };

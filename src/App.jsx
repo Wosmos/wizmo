@@ -11,12 +11,12 @@ const App = () => {
         <div className='gradient' />
       </div>
 
-      <div className='app '>
+      <section className='app '>
           <Hero />
 
         <div className='bg-[#f5f5ffd4] absolute top-2 -z-20 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#460556]'></div>
         <Demo />
-      </div>
+      </section>
     </main>
   );
 };
