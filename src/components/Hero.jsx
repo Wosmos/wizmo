@@ -18,7 +18,7 @@ const Hero = () => {
       </nav>
 
       <section className='mt-0  md:-mt-12'>
-        <h1 className='md:text-9xl text-6xl font-bold -mb-8 font-inter text-center blue_gradient'>
+        <h1 className='md:text-9xl text-6xl font-extrabold -mb-8 font-inter text-center bg-gradient-to-b from-blue-600 to-cyan-600 bg-clip-text text-transparent  '>
           Wizmo
         </h1>
         <h1 className='head_text -mb-2'>
@@ -27,9 +27,9 @@ const Hero = () => {
           <span className='blue_gradient'>AI-Driven </span>Summarization
         </h1>
         <h2 className='desc -mb-10'>
-          Revolutionize your reading with Summize, an open-source solution using
-          OpenAI GPT-4 to distill articles into concise, insightful summaries
-          for effortless understanding.
+          Revolutionize your reading with <b>Wizmo</b>, an open-source solution
+          using <b>OpenAI GPT-4</b> to distill articles into concise, insightful{' '}
+          <b>summaries</b> for effortless understanding.
         </h2>
       </section>
     </header>
