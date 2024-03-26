@@ -86,9 +86,6 @@ const Demo = () => {
             className='submit_btn peer-focus:border-gray-700 peer-focus:text-gray-700  rounded-2xl '
           >
             <p>↵</p>
-            {/* <p >
-              ✔️
-            </p> */}
           </button>
         </form>
 
@@ -116,7 +113,7 @@ const Demo = () => {
       </div>
       {/* <FroalaEditor /> */}
       {/* Display Result */}
-      <section className=' my-10 max-w-full flex justify-center items-center'>
+      <article className=' my-10 max-w-full flex justify-center items-center'>
         {isFetching ? (
           <img src={loader} alt='loader' className='w-20 h-20 object-contain' />
         ) : error ? (
@@ -134,14 +131,27 @@ const Demo = () => {
                 Article <span className='blue_gradient'>Summary</span>
               </h2>
               <div className='summary_box'>
-                <p className='font-inter font-medium text-sm text-gray-300 '>
+                <p className='font-inter font-medium text-sm text-gray-300 pt-4 pb-8'>
                   {article.summary}
                 </p>
+                <div
+                  className='absolute right-0 bottom-0 m-4 px-2 py-1 rounded-md bg-gradient-to-r from-blue-600 to-cyan-600 backdrop-blur flex justify-center items-center cursor-pointer'
+                  onClick={() => handleCopy(article.summary)}
+                >
+                  <img
+                    src={copied === article.summary ? tick : copy}
+                    alt={copied === article.summary ? 'tick_icon' : 'copy_icon'}
+                    className='w-[40%] h-[40%] object-contain filter invert'
+                  />
+                  <span className='text-white text-xs ml-1'>
+                    {copied === article.summary ? 'Copied' : 'Copy'}
+                  </span>
+                </div>
               </div>
             </div>
           )
         )}
-      </section>
+      </article>
     </section>
   );
 };
