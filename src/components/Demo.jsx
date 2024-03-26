@@ -131,13 +131,14 @@ const Demo = () => {
                 Article <span className='blue_gradient'>Summary</span>
               </h2>
               <div className='summary_box'>
-                <p className='font-inter font-medium text-sm text-gray-300 pt-4 pb-8'>
+                <p className='font-inter font-medium text-sm text-gray-300 '>
                   {article.summary}
                 </p>
                 <div
-                  className='absolute right-0 bottom-0 m-4 px-2 py-1 rounded-md bg-gradient-to-r from-blue-600 to-cyan-600 backdrop-blur flex justify-center items-center cursor-pointer'
+                  className='absolute right-3 -bottom-3 m-0 px-2 py-1 rounded-md  backdrop-blur flex justify-center items-center cursor-pointer    bg-gradient-to-r from-blue-600 to-cyan-600 '
                   onClick={() => handleCopy(article.summary)}
                 >
+                  <div className="absolute w-[80%] h-[80%] z-20 hover:bg-blue-50/20 rounded-[4px] transition-all ease-in"/>
                   <img
                     src={copied === article.summary ? tick : copy}
                     alt={copied === article.summary ? 'tick_icon' : 'copy_icon'}
