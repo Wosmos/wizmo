@@ -106,7 +106,7 @@
 }
 
 .head_text {
-  @apply mt-0 md:mt-10 text-4xl md:text-5xl font-extrabold leading-normal text-white sm:text-4xl text-center shadow-xl; /* Adjusted font size and margin for better responsiveness */
+  @apply mt-0 md:mt-10 text-4xl md:text-6xl font-extrabold leading-normal text-white sm:text-4xl text-center shadow-xl; /* Adjusted font size and margin for better responsiveness */
 }
 
 .purple_gradient {
