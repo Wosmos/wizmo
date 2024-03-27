@@ -92,21 +92,37 @@ const Demo = () => {
         {/* Browse History */}
         <section className='flex flex-col gap-1 max-h-60 overflow-y-auto '>
           {allArticles.reverse().map((item, index) => (
-            <div
-              key={`link-${index}`}
-              onClick={() => setArticle(item)}
-              className='link_card transition-all ease-in   hover:bg-white/20'
-            >
-              <div className='copy_btn ' onClick={() => handleCopy(item.url)}>
-                <img
-                  src={copied === item.url ? tick : copy}
-                  alt={copied === item.url ? 'tick_icon' : 'copy_icon'}
-                  className='w-[40%] h-[40%] object-contain filter invert'
-                />
+            <div key={`link-${index}`} className='relative'>
+              <div
+                onClick={() => setArticle(item)}
+                className='link_card transition-all ease-in   hover:bg-white/20'
+              >
+                <div className='copy_btn ' onClick={() => handleCopy(item.url)}>
+                  <img
+                    src={copied === item.url ? tick : copy}
+                    alt={copied === item.url ? 'tick_icon' : 'copy_icon'}
+                    className='w-[40%] h-[40%] object-contain filter invert'
+                  />
+                </div>
+                <p className='flex-1 font-satoshi text-blue-100 font-medium text-sm truncate '>
+                  {item.url}
+                </p>
+                <button
+                  className='copy_btn '
+                  onClick={() => {
+                    const updatedArticles = allArticles.filter(
+                      (_, idx) => idx !== index
+                    );
+                    setAllArticles(updatedArticles);
+                    localStorage.setItem(
+                      'articles',
+                      JSON.stringify(updatedArticles)
+                    );
+                  }}
+                >
+                  X
+                </button>
               </div>
-              <p className='flex-1 font-satoshi text-blue-100 font-medium text-sm truncate '>
-                {item.url}
-              </p>
             </div>
           ))}
         </section>
@@ -138,7 +154,7 @@ const Demo = () => {
                   className='absolute right-3 -bottom-3 m-0 px-2 py-1 rounded-md  backdrop-blur flex justify-center items-center cursor-pointer    bg-gradient-to-r from-blue-600 to-cyan-600 '
                   onClick={() => handleCopy(article.summary)}
                 >
-                  <div className="absolute w-[80%] h-[80%] z-20 hover:bg-blue-50/20 rounded-[4px] transition-all ease-in"/>
+                  <div className='absolute w-[80%] h-[80%] z-20 hover:bg-blue-50/20 rounded-[4px] transition-all ease-in' />
                   <img
                     src={copied === article.summary ? tick : copy}
                     alt={copied === article.summary ? 'tick_icon' : 'copy_icon'}

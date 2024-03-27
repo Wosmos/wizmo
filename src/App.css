@@ -130,7 +130,7 @@
 }
 
 .copy_btn {
-  @apply w-7 h-7 rounded-full bg-gradient-to-r from-blue-600 to-cyan-600 backdrop-blur flex justify-center items-center cursor-pointer;
+  @apply w-7 h-7 rounded-full bg-gradient-to-r from-blue-600 to-cyan-600 backdrop-blur flex justify-center items-center cursor-pointer text-white font-extralight text-xs ;
 }
 
 .blue_gradient {
